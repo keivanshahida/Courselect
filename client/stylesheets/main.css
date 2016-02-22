@@ -1,0 +1,225 @@
+/*=================================================
+||				Imports 
+==================================================*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:200,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,300);
+
+/*=================================================
+||				1. Home
+==================================================*/
+
+html,body {
+  font-family: 'Roboto', 'Open-Sans', sans-serif;
+  height:100%;
+  padding-top: 20px; 
+  background-color:#4CBAFF;
+  color: white;
+}
+
+h1 {
+
+  font-family: 'Comfortaa', cursive;
+  font-size: 6em;
+  letter-spacing: 10px;
+  font-weight: 200;
+}
+
+h2 {
+
+  font-family: 'Comfortaa', cursive;
+  font-size: 4em;
+  letter-spacing: 10px;
+  font-weight: 200;
+}
+
+.lead {
+	font-size: 1.4em;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 556px) {
+     h1 {
+    	font-size:3em;
+     }
+
+    .lead{
+		font-size: .9em;
+    }
+
+    h2 {
+      font-size: 2.5em;
+    }
+}
+
+/* CUSTOM FULL CONTAINER */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  min-height:100%;
+  color:white;
+  overflow:hidden;
+}
+
+.container-full a {
+  color:white;
+  text-decoration:none;
+}
+
+.v-center {
+  margin-top:7%;
+}
+
+/* CUSTOM HALF CONTAINER */
+.container-half {
+  margin: 0 auto;
+  overflow:hidden;
+  padding-top: 0;
+}
+
+  
+/*SIGN IN BUTTON*/
+
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #009FFD;
+}
+
+.text {
+  color: #fff;
+  font-size: 20px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 6px;
+    fill: #0471A6;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+
+/*ARCHIVES*/
+
+
+/*SIGN IN BUTTON*/
+/*.signin {
+  background-color:transparent;
+  -webkit-border-top-left-radius:4px;
+  -moz-border-radius-topleft:4px;
+  border-top-left-radius:4px;
+  -webkit-border-top-right-radius:4px;
+  -moz-border-radius-topright:4px;
+  border-top-right-radius:4px;
+  -webkit-border-bottom-right-radius:4px;
+  -moz-border-radius-bottomright:4px;
+  border-bottom-right-radius:4px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-bottomleft:4px;
+  border-bottom-left-radius:4px;
+  text-indent:0;
+  border:2px solid #ffffff;
+  display:inline-block;
+  color:#ffffff;
+  margin:3em;
+  font-size:16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  height:55px;
+  line-height:55px;
+  width:184px;
+  text-decoration:none;
+  text-align:center;
+}
+.signin:hover {
+  border:2px solid #42A2DD;
+  background-color:#42A2DD;
+  text-align: center;
+}
+.signin:active {
+  position:relative;
+  top:1px;
+}
+*/
+/*SIGN UP BUTTON*/
+/*.signup {
+  background-color:#1bb2ee;
+  -webkit-border-top-left-radius:4px;
+  -moz-border-radius-topleft:4px;
+  border-top-left-radius:4px;
+  -webkit-border-top-right-radius:4px;
+  -moz-border-radius-topright:4px;
+  border-top-right-radius:4px;
+  -webkit-border-bottom-right-radius:4px;
+  -moz-border-radius-bottomright:4px;
+  border-bottom-right-radius:4px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-bottomleft:4px;
+  border-bottom-left-radius:4px;
+  text-indent:0;
+  border:2px solid #1bb2ee;
+  display:inline-block;
+  color:#ffffff;
+  font-size:16px;
+  text-transform: uppercase;
+  height:55px;
+  line-height:55px;
+  width:184px;
+  text-decoration:none;
+  text-align:center;
+}
+.signup:hover {
+  background-color:#006F9A;
+  border:2px solid #006F9A;
+  color:#ffffff;
+}
+.signup:active {
+  position:relative;
+  top:1px;
+}*/
+
+.search_container{
+
+  margin-top: 25%;
+}
+
+.search_drop{
+
+  margin-bottom: 2%;
+}
+
+.dropdown-menu{
+
+    font-family: 'FontAwesome', sans-serif;
+    font-weight: bold;
+
+
+}
+

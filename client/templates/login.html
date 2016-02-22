@@ -1,0 +1,35 @@
+<template name="login">
+	<!-- LOGIN -->
+		<div class="container-half">
+			<br>
+			<div class="row">
+				<div class="col-lg-12 text-center v-center">
+					<h2>courselect</h2>
+				</div>
+			</div> <!-- /row -->
+		</div> <!-- /container full -->
+
+		<!-- LOGIN FORM -->
+		<div class="site__container">
+			<div class="grid__container">
+				
+				<form action="" method="post" class="form form--login">
+					<div class="form__field">
+						<label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+						<input id="login__username" type="text" class="form__input" placeholder="Username" required>
+					</div>
+
+					<div class="form__field">
+						<label id ="lock_adjust" class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+						<input id="login__password" type="password" class="form__input" placeholder="Password" required>
+					</div>
+
+					<div class="form__field">
+						<input class = "bigfont" type="submit" value="Sign In">
+					</div>
+				</form>
+
+				<p class="text--center"> <a href="#">Forgot your password?</a></p>
+			</div> <!-- /grid__container -->
+		</div> <!-- /site__container -->
+	</template>
