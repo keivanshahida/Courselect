@@ -3,26 +3,26 @@
 	<!-- 2) Fix Header -->
 	<!-- 3) Fix device compatibility (i.e. text scaling) -->
 
-<template name="search">
+	<template name="search">
 
-	<!-- SEARCH -->
-	<div class="container-full">
-		
-		<div class = "row header_container">
-			<div class = "col-lg-6 text-center">	
-				<h1 class = "searchHeader">Find the perfect course.</h1>
+		<!-- SEARCH -->
+		<div class="container-full">
+
+			<div class = "row header_container">
+				<div class = "col-lg-6 text-center">	
+					<h1 class = "searchHeader">Find the perfect course.</h1>
+				</div>
 			</div>
-		</div>
 
-		<div class="row search_container">
+			<div class="row search_container">
 
-			<div class = "col-lg-2 text-center">
+				<div class = "col-lg-2 text-center">
 
-			</div> <!-- col -->
+				</div> <!-- col -->
 
-			<div class = "col-lg-2 text-center">
-				
-				<div class="dropdown search_drop">
+				<div class = "col-lg-2 text-center">
+
+				<!-- <div class="dropdown search_drop">
 					<button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">DEPARTMENT
 						<span class="caret"></span></button>
 						<ul class="dropdown-menu">
@@ -33,18 +33,40 @@
 							<li><a href="#">Mathematics</a></li>
 							<li><a href="#">Science</a></li>
 						</ul>
-					</div>
+					</div> -->
+
+
+					<div class="form-group">
+							<select class="form-control btn-primary" id="sel1">
+								<option value="all" selected>DEPARTMENT</option>
+								<option>Arts</option>
+								<option>English</option>
+								<option>Foreign Language</option>
+								<option>History</option>
+								<option>Mathematics</option>
+								<option>Science</option>
+							</select>
+						</div>
+
 				</div> <!-- col -->
 
 				<div class = "col-lg-2 text-center">
 
-					<div class="dropdown search_drop">
+					<!-- <div class="dropdown search_drop">
 						<button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">CREDITS
 							<span class="caret"></span></button>
 							<ul class="dropdown-menu">
 								<li><a href="#">1 Credit</a></li>
 								<li><a href="#">1/2 Credit</a></li>
 							</ul>
+						</div> -->
+
+						<div class="form-group">
+							<select class="form-control btn-primary" id="sel1">
+								<option value="all" selected>CREDITS</option>
+								<option>1 Credit</option>
+								<option>1/2 Credit</option>
+							</select>
 						</div>
 
 					</div> <!-- col -->
@@ -53,7 +75,7 @@
 
 						<div class="form-group">
 							<select class="form-control btn-primary" id="sel1">
-								 <option value="all" selected>LEVEL</option>
+								<option value="all" selected>LEVEL</option>
 								<option>Regular</option>
 								<option>Honors</option>
 								<option>Advanced Placement</option>
