@@ -1,0 +1,69 @@
+<!-- TO DO -->
+<!-- 1) Change color scheme (i.e. bg to White) -->
+
+<template name="coursepage">
+	<div class = "container-full">
+
+		<div class="row">
+			<div class="col-lg-1 text-center v-center"></div>
+			<div class="col-lg-8 text-center v-center">
+				<!-- COURSE TITLE AND CODE -->
+				<div class = "result">
+					<a href="/results">Back to results</a>
+					<!-- <h1 class="resultName">Advanced Placement Calculus AB</h1> -->
+					<h1 class="resultName">{{coursename}}</h1>
+					<p class = "resultCode">0451 APAB</p>
+				</div>
+			</div>
+			<div class="col-lg-1 text-center v-center">
+				<!-- COURSE TAGS -->
+				<div class = "result">
+					<br>
+					<h1 class = "resultTag">AP H M</h1>
+				</div>
+			</div>
+			<div class="col-lg-1 text-center v-center">
+				<!-- SAVE BUTTON -->
+				<div class = "result">
+					<br>
+					<h1 class = "resultTag"><a href="">SAVE</a></h1>
+				</div>
+			</div>
+
+			<div class="col-lg-1 text-center v-center"></div>
+		</div> <!-- /row -->
+
+		<div class = "row">
+
+			<div class="col-lg-1 text-center v-center"></div>
+
+			<div class = "col-lg-10 text-center v-center">
+				<div class = "result">
+					<!-- COURSE INFO -->
+					<p>
+						A rigorous introduction to Calculus, this course covers the concepts of differentiation and integration, with applications to rates of change, optimization, area, and volume. One semester of college calculus credit may be earned from this course. This course culminates in the AP Calculus AB exam in the spring. 
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-1 text-center v-center"></div>
+		</div><!-- /row -->
+
+		<div class = "row">
+			<div class="col-lg-1 text-center v-center"></div>
+			<div class="col-lg-11 text-center v-center">
+				<!-- PREREQUISITES -->
+				<div class = "result" id = "preqRow">
+					<h1 class="resultName">Prerequisites:</h1>
+					<p class = "preq">Receive a B+ or higher.</p>
+				</div>
+			</div>
+		</div><!-- /row -->
+
+		<div class = "row">
+			<div class="col-lg-12 text-center v-center">
+				<!-- ADD COURSE -->
+				<a href="/search">Add to Schedule</a>
+			</div>
+		</div><!-- /row -->
+	</div> <!--/ container-full -->
+</template>

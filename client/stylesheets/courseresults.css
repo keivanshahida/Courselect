@@ -1,0 +1,62 @@
+/*IMPORT*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+/*=================================================
+||        1. Results Div
+==================================================*/
+
+.result{
+	font-family: 'Roboto', 'Open-Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	text-align: left;
+	margin: 0 auto;
+	width: 100%;
+	min-height:100%;
+	color:white;
+	overflow:hidden;
+}
+
+.resultName{
+	font-family: 'Roboto', 'Open-Sans', sans-serif;
+	letter-spacing: 0px;
+	font-size: 1.5em;
+}
+
+.resultInfo{
+
+	font-size: 1.5em;
+}
+
+.resultLink a:hover{
+
+	text-decoration: none;
+}
+
+.resultCode{
+
+  font-weight: 300;
+}
+
+.resultTag{
+
+font-family: 'Roboto', 'Open-Sans', sans-serif;
+	letter-spacing: 0px;
+	font-size: 1.5em;
+	
+}
+
+.back-container{
+	margin-top: 40px;
+}
+
+.preq{
+
+	font-weight: 300;
+}
+
+#preqRow{
+
+	margin-top: -100px;
+}
