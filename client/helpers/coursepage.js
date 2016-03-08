@@ -1,16 +1,12 @@
 // TO DO
 // 1) Get coursepage to populate with course specific data
 
-Template.coursepage.helpers({
+// Template.coursepage.helpers({
 
-//Retrieve courses from collection
-  // courses: function(){
-  // 	return Courses.find().fetch();
-  // }
-
- courses: function(){
-  	return Courses.findOne({_id: this.params._id});
-  }
+//     courses: function () {
+//       var currentId = this.params._id;
+//       return Courses.findOne({_id: currentId});
+//     }
 
 // Router.route('/coursepage/:_id', function () {
 //   this.render('coursepage', {
@@ -20,4 +16,4 @@ Template.coursepage.helpers({
 //   });
 // });
 
-});
+// });
