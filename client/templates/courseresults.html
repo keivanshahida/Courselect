@@ -20,15 +20,17 @@
 			
 			{{#each courses}}
 			<div class="result">
-				<h1 class="resultName"><a class = "resultLink" href="/coursepage/{{this._id}}">{{coursename}}</a></h1>				
-				<p class = "resultCode">{{coursenumber}}</p>
+				<h1 class="resultName"><a class = "resultLink" href="/coursepage/{{this.number}}">{{name}}</a></h1>				
+				<p class = "resultCode">{{number}}</p>
 				<br>
 				<p>
-					A rigorous introduction to Calculus, this course covers the concepts of differentiation and integration, with applications to rates of change, optimization, area, and volume. One semester of college calculus credit may be earned from this course. This course culminates in the AP Calculus AB exam in the spring. 
+					{{shortinfo}}
 				</p>
 				<br><br>
 				<hr>
 			</div>
+			{{else}}
+				<p>No courses found.</p>
 			{{/each}}
 
 		</div>

@@ -10,9 +10,9 @@
 			<div class="col-lg-8 text-center v-center">
 				<!-- COURSE TITLE AND CODE -->
 				<div class = "result">
-					<a href="/results">Back to results</a>
-					<h1 class="resultName">{{coursename}}</h1>
-					<p class = "resultCode">{{coursenumber}}</p>
+					<a href="javascript:history.back()">Back to results</a>
+					<h1 class="resultName">{{name}}</h1>
+					<p class = "resultCode">{{number}}</p>
 				</div>
 			</div>
 			<div class="col-lg-1 text-center v-center">
@@ -40,9 +40,7 @@
 			<div class = "col-lg-10 text-center v-center">
 				<div class = "result">
 					<!-- COURSE INFO -->
-					<p>
-						A rigorous introduction to Calculus, this course covers the concepts of differentiation and integration, with applications to rates of change, optimization, area, and volume. One semester of college calculus credit may be earned from this course. This course culminates in the AP Calculus AB exam in the spring. 
-					</p>
+					<p>{{longinfo}}</p>
 				</div>
 			</div>
 			<div class="col-lg-1 text-center v-center"></div>

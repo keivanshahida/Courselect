@@ -1,0 +1,103 @@
+
+<!-- <template name="searchform"> -->
+
+<!-- 	<div class = "col-lg-2 text-center">
+		<div class="form-group">
+			<select class="form-control btn-primary" id="sel1">
+				<option value="all" selected>DEPARTMENT</option>
+				<option>Arts</option>
+				<option>English</option>
+				<option>Foreign Language</option>
+				<option>History</option>
+				<option>Mathematics</option>
+				<option>Science</option>
+			</select>
+		</div>
+	</div>  --><!-- col -->
+
+	<!-- <div class = "col-lg-2 text-center">
+		<div class="form-group">
+			<select class="form-control btn-primary" id="sel1">
+				<option value="all" selected>CREDITS</option>
+				<option>1 Credit</option>
+				<option>1/2 Credit</option>
+			</select>
+		</div>
+	</div>  --><!-- col -->
+
+	<!-- <div class = "col-lg-2 text-center">
+		<div class="form-group">
+			<select class="form-control btn-primary" id="sel1">
+				<option value="all" selected>LEVEL</option>
+				<option>Regular</option>
+				<option>Honors</option>
+				<option>Advanced Placement</option>
+			</select>
+		</div>
+	</div>  --><!-- col -->
+
+	<!-- <div class = "col-lg-2 text-center">
+		<button type="button" class="btn btn-default btn-block search_drop">SEARCH</button>
+		<a href= "/results">HERE</a>
+	</div>  --><!-- col -->
+
+<!-- 
+<form>
+	<input type = "select">
+
+</form>
+
+</template>
+-->
+
+<template name="searchform">
+	
+	<div class = "col-lg-2 text-center">
+		<div class="form-group">
+			<select name = "department" class="form-control btn-primary" id="sel1" form = "search_form">
+				<option value="" selected>DEPARTMENT</option>
+				<option value = "6">Arts</option>
+				<option value = "5">Computing & Communications</option>
+				<option value = "8">Counseling & Guidance</option>
+				<option value = "0">English</option>
+				<option value = "2">Foreign Language</option>
+				<option value = "1">History</option>
+				<option value = "7">Independent Study</option>
+				<option value = "3">Mathematics</option>
+				<option value = "9">Physical Education & Health</option>
+				<option value = "4">Science</option>
+			</select>
+		</div>
+	</div> <!-- col -->
+
+	<div class = "col-lg-2 text-center">
+		<div class="form-group">
+			<select name = "credits" class="form-control btn-primary" id="sel1" form = "search_form">
+				<option value="" selected>CREDITS</option>
+				<option value = "1">1 Credit</option>
+				<option value = ".5">1/2 Credit</option>
+			</select>
+		</div>
+	</div> <!-- col -->
+
+	<div class = "col-lg-2 text-center">
+		<div class="form-group">
+			<select name = "level" class="form-control btn-primary" id="sel1" form = "search_form">
+				<option value="" selected>LEVEL</option>
+				<option value = "0">Regular</option>
+				<option value = "1">Honors</option>
+				<option value = "2">Advanced Placement</option>
+			</select>
+		</div>
+	</div> <!-- col -->
+
+	<div class = "col-lg-2 text-center">
+		<!-- <button type="button" class="btn btn-default btn-block search_drop">SEARCH</button> -->
+
+		<form id="search_form" action = "/results">
+			<input type="submit" value = "SEARCH" class="btn btn-default btn-block search_drop">
+		</form>
+	</div> <!-- col -->
+
+
+</template>
