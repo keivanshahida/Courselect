@@ -1,0 +1,37 @@
+<!-- TO DO -->
+<!-- Fix Email placeholder alignment -->
+
+<template name="register">
+
+	<!-- TITLE -->
+	<div class="container-half">
+		<br>
+		<div class="row">
+			<div class="col-lg-12 text-center v-center">
+				<h2>courselect</h2>
+			</div>
+		</div> <!-- /row -->
+	</div> <!-- /container full -->
+
+	<!-- REGISTRATION FORM -->
+	<div class="site__container">
+		<div class="grid__container">
+			<form class="register form form--login">
+
+					<div class="form__field">
+						<label class="fontawesome-user" for="login__username"><span class="hidden">Username</span></label>
+						<input id="login__username" type="email" name = "email" class="form__input" placeholder="Email" required>
+					</div>
+
+					<div class="form__field">
+						<label id ="lock_adjust" class="fontawesome-lock" for="login__password"><span class="hidden">Password</span></label>
+						<input id="login__password" type="password" name = "password" class="form__input" placeholder="Password" required>
+					</div>
+
+					<div class="form__field">
+						<input class = "bigfont" type="submit" value="Register">
+					</div>
+			</form>
+		</div> <!-- /grid__container -->
+	</div> <!-- /site__container -->
+</template>

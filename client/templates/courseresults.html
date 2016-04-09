@@ -3,7 +3,6 @@
 <!-- 2) Add course tags -->
 <!-- 3) Add save button -->
 <!-- 4) Add search bar -->
-<!-- 5) Fix screen width wiggle -->
 
 <template name="courseresults">
 
@@ -19,6 +18,7 @@
 
 		<div class="col-lg-9 text-center v-center">
 			
+			<!-- Display search results -->
 			{{#each courses}}
 			<div class="result">
 				<h1 class="resultName"><a class = "resultLink" href="/coursepage/{{this.number}}">{{name}}</a></h1>				
