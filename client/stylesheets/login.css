@@ -52,7 +52,7 @@ input {
   padding: 5rem 0;
 }
 
-.form input[type="password"], .form input[type="text"], .form input[type="submit"] {
+.form input[type="password"], .form input[type="email"], .form input[type="text"], .form input[type="submit"] {
   width: 100%;
 }
 .form--login {
@@ -68,6 +68,7 @@ input {
 }
 
 .form--login input[type="text"],
+.form--login input[type="email"],
 .form--login input[type="password"],
 .form--login input[type="submit"] {
   border-radius: 0.25rem;
@@ -80,12 +81,12 @@ input {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.form--login input[type="text"], .form--login input[type="password"] {
+.form--login input[type="text"], .form--login input[type="email"], .form--login input[type="password"] {
   background-color: #FFFFFF;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-.form--login input[type="text"]:focus, .form--login input[type="text"]:hover, .form--login input[type="password"]:focus, .form--login input[type="password"]:hover {
+.form--login input[type="text"]:focus, .form--login input[type="text"]:hover, .form--login input[type="email"]:focus, .form--login input[type="email"]:hover, .form--login input[type="password"]:focus, .form--login input[type="password"]:hover {
   background-color: #d3d3d3;
 }
 
