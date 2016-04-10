@@ -1,5 +1,5 @@
 // TO DO:
-// 1) Use the profile object to add other attributes
+// 1) Fix createUser function so that it adds a user to the DB
 
 Template.register.events({
     'submit form': function(){
@@ -8,7 +8,12 @@ Template.register.events({
         var password = $('[name=password]').val();
         Accounts.createUser({
             email: email,
-            password: password
+            password: password,
+            profile: {
+                firstname: firstname,
+                lastname: lastname,
+                school: school,
+            }
 
         }, function(error){
             if(error){
