@@ -1,3 +1,6 @@
+// TO DO:
+// 1) Use the profile object to add other attributes
+
 Template.register.events({
     'submit form': function(){
         event.preventDefault();

@@ -1,7 +1,6 @@
 <template name = "settings">
 
-	<div class="row">
-	</div>
+	<div class="row"></div> <!-- /row -->
 
 	<div class="row">
 
@@ -12,18 +11,35 @@
 			<h3 id = "profschool">Horace Mann School</h3>
 			<h3 class = "proflighttext">Class of 2016</h3>
 
-
 		</div> <!-- /col -->
 
-		<div class ="col-lg-8 text-center v-center">
+		<div class="col-lg-2 text-center v-center"></div> <!-- /col -->
+
+		<div class ="col-lg-4 text-center v-center">
 			
 			<!-- Email Address, Change Password -->
 			<h3 id = "profemail">Email</h3>
 			<h3 class = "proflighttext">keivanshahida@icloud.com</h3>
+			<br>
+			<form class="form form--login">
+				<div class="form__field">
+					<label id ="lock_adjust" class="fontawesome-lock" for="login__password"><span class="hidden">Old Password</span></label>
+					<input id="login__password" type="password" name = "password" class="form__input" placeholder="Old Password" required>
+				</div>
 
+				<div class="form__field">
+					<label id ="lock_adjust" class="fontawesome-lock" for="login__password"><span class="hidden">New Password</span></label>
+					<input id="login__password" type="password" name = "password" class="form__input" placeholder="New Password" required>
+				</div>
 
-
+				<div class="form__field">
+					<input class = "bigfont" type="submit" value="Change Password">
+				</div>
+			</form>
+			
 		</div> <!-- /col -->
+
+		<div class="col-lg-2 text-center v-center"></div> <!-- /col -->
 
 	</div> <!-- /row -->
 
