@@ -4,6 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:200,400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:400,300);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 /*=================================================
 ||				1. Home
@@ -241,19 +242,35 @@ option{
 /*ADAPTIVE CSS*/
 
 @media screen and (max-width: 556px) {
-   h1 {
-     font-size:3em;
-   }
+ h1 {
+   font-size:3em;
+ }
 
-   .lead{
-    font-size: .9em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  .searchHeader{
-    font-size:2em;
-  }
+ .lead{
+  font-size: .9em;
 }
+
+h2 {
+  font-size: 2.5em;
+}
+
+.searchHeader{
+  font-size:2em;
+}
+}
+
+/*=================================================
+||        6. Schedule
+==================================================*/
+
+
+.schedule h1{
+
+ font-family: 'Comfortaa', cursive;
+ font-size: 4em;
+ letter-spacing: 10px;
+ font-weight: 200;
+}
+
+
+
