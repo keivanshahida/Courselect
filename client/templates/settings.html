@@ -5,13 +5,16 @@
 	<div class="row">
 
 		<div class="col-lg-4 text-center v-center">
-
+			<br><br>
+			<div id="wrap">
+				<img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/_everaldo/128.jpg" />
+			</div>
 			<!-- Profile Pic, Name, School, Graduation Year -->
 			{{#with currentUser}}
 				{{#with profile}}
-					<h1 id = "profname"> {{firstname}} {{lastname}}</h1>
-					<h3 id = "profschool">{{school}}</h3>
-					<h3 class = "proflighttext">Class of {{grad_year}}</h3>
+					<h1 class = "username"> {{firstname}} {{lastname}}</h1>
+					<h3 class = "userdetail">{{school}}</h3>
+					<h3 class = "userdetail">Class of {{grad_year}}</h3>
 				{{/with}}
 			{{/with}}
 
@@ -22,14 +25,13 @@
 		<div class="col-lg-2 text-center v-center"></div> <!-- /col -->
 
 		<div class ="col-lg-4 text-center v-center">
-			
+			<br><br><br><br><br><br>
 			<!-- Email Address, Change Password -->
-			<h3 id = "profemail">Email</h3>
 			{{#with currentUser}}
-				{{#with emails}}
-				<!-- FIX EMAIL ISSUE -->
-					<h3 class = "proflighttext">{{address}}</h3>
-				{{/with}}
+			{{#with emails}}
+			<!-- FIX EMAIL ISSUE -->
+			<h3 class = "useremail">Email: skim@icloud.com</h3>
+			{{/with}}
 			{{/with}}
 			<br>
 			<form class="form form--login">

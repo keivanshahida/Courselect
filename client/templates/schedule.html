@@ -1,69 +1,28 @@
 <template name="schedule">
 
 	<div class="row">
-		<div class="col-lg-5 text-center v-center"></div> <!-- BUFFER -->
-		<div class="col-lg-2 text-center v-center">
-			<!-- TOGGLE BUTTON -->
-			<p>TOGGLE HERE</p>
-		</div>
-		<div class="col-lg-3 text-center v-center"></div> <!-- BUFFER -->
-		<div class="col-lg-2 text-center v-center">
-			<p>SAVED HERE</p>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
-		<div class="col-lg-2 text-center v-center">
-			
-			<p>COURSES HERE</p>
+		<div class="col-lg-9 text-center v-center">
+			<h1>My Schedule:</h1>
 		</div>
 		<div class="col-lg-2 text-center v-center">
-			
-			<p>COURSES HERE</p>
-		</div>
-		<div class="col-lg-2 text-center v-center">
-			<!-- VERTICAL ACCORDION FILLED WITH COURSE SELECTION POPUPS-->
-			<p>COURSES HERE</p>
-		</div>
-		<div class="col-lg-2 text-center v-center">
-			
-			<p>COURSES HERE</p>
-		</div>
-		<div class="col-lg-2 text-center v-center">
-			
-			<p>COURSES HERE</p>
-		</div>
-		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
-	</div> <!-- /row -->
-
-	<div class = "row">
-		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
-		<div class="col-lg-5 text-center v-center">
-			<p>HALF CREDITS HERE</p>
-
-		</div>
-		<div class="col-lg-5 text-center v-center">
-			<p>HALF CREDITS HERE</p>
-
-		</div>
-		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
-
-	</div>
-
-	<div class="row">
-		<div class="col-lg-4 text-center v-center"></div>
-		<div class="col-lg-4 text-center v-center">
-
-			<!-- SUBMIT BUTTON -->
 			<form class="form form--login">
 
 				<div class="form__field">
-					<input class = "bigfont" type="submit" value="Submit">
+					<input class = "bigfont" type="submit" value="Saved">
 				</div>
 			</form>
 		</div>
-		<div class="col-lg-4 text-center v-center"></div>
-	</div> <!-- /row -->
+		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+		<div class="col-lg-10 text-center v-center">
+			{{>courseaccordion}}
+		</div>
+		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+	</div>
+	
 
 </template>

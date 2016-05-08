@@ -114,103 +114,27 @@ h2 {
   animation: 0.5s draw linear forwards;
 }
 
+.header_container{
 
-/*ARCHIVES*/
-
-
-/*SIGN IN BUTTON*/
-/*.signin {
-  background-color:transparent;
-  -webkit-border-top-left-radius:4px;
-  -moz-border-radius-topleft:4px;
-  border-top-left-radius:4px;
-  -webkit-border-top-right-radius:4px;
-  -moz-border-radius-topright:4px;
-  border-top-right-radius:4px;
-  -webkit-border-bottom-right-radius:4px;
-  -moz-border-radius-bottomright:4px;
-  border-bottom-right-radius:4px;
-  -webkit-border-bottom-left-radius:4px;
-  -moz-border-radius-bottomleft:4px;
-  border-bottom-left-radius:4px;
-  text-indent:0;
-  border:2px solid #ffffff;
-  display:inline-block;
-  color:#ffffff;
-  margin:3em;
-  font-size:16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  height:55px;
-  line-height:55px;
-  width:184px;
-  text-decoration:none;
-  text-align:center;
+ margin-left: 5%;
+ margin-top: 10%;
 }
-.signin:hover {
-  border:2px solid #42A2DD;
-  background-color:#42A2DD;
-  text-align: center;
+
+ /*=================================================
+||        2. Search
+==================================================*/
+
+.searchHeader{
+ font-family: 'Roboto', 'Open-Sans', sans-serif;
+ font-size: 3em;
+ font-weight: 100;
+ letter-spacing: 5px;
+ height:100%;
+ color: white;
+
 }
-.signin:active {
-  position:relative;
-  top:1px;
-}
-*/
-/*SIGN UP BUTTON*/
-/*.signup {
-  background-color:#1bb2ee;
-  -webkit-border-top-left-radius:4px;
-  -moz-border-radius-topleft:4px;
-  border-top-left-radius:4px;
-  -webkit-border-top-right-radius:4px;
-  -moz-border-radius-topright:4px;
-  border-top-right-radius:4px;
-  -webkit-border-bottom-right-radius:4px;
-  -moz-border-radius-bottomright:4px;
-  border-bottom-right-radius:4px;
-  -webkit-border-bottom-left-radius:4px;
-  -moz-border-radius-bottomleft:4px;
-  border-bottom-left-radius:4px;
-  text-indent:0;
-  border:2px solid #1bb2ee;
-  display:inline-block;
-  color:#ffffff;
-  font-size:16px;
-  text-transform: uppercase;
-  height:55px;
-  line-height:55px;
-  width:184px;
-  text-decoration:none;
-  text-align:center;
-}
-.signup:hover {
-  background-color:#006F9A;
-  border:2px solid #006F9A;
-  color:#ffffff;
-}
-.signup:active {
-  position:relative;
-  top:1px;
-  }*/
 
-  .header_container{
-
-   margin-left: 5%;
-   margin-top: 10%;
- }
-
- .searchHeader{
-   font-family: 'Roboto', 'Open-Sans', sans-serif;
-   font-size: 3em;
-   font-weight: 100;
-   letter-spacing: 5px;
-   height:100%;
-   color: white;
-
- }
-
- .search_container{
+.search_container{
 
   margin-top: 10%;
 }
@@ -238,8 +162,100 @@ option{
   color: #000000;
 }
 
+/*=================================================
+||        3. Schedule
+==================================================*/
 
-/*ADAPTIVE CSS*/
+
+.schedule h1{
+
+  font-family: 'Roboto', 'Open-Sans', sans-serif;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.schedule p{
+  font-family: 'Roboto', 'Open-Sans', sans-serif;
+  font-size: 1em;
+
+}
+
+.schedule .v-center{
+
+  margin-top: 4%;
+}
+
+/*=================================================
+||        3. COURSE ACCORDION
+==================================================*/
+
+.panel-body{
+  font-family: 'Roboto', 'Open-Sans', sans-serif;
+  font-size: 2em;
+  color: black;
+}
+
+/*=================================================
+||        4. SETTINGS
+==================================================*/
+
+.settings .username{
+
+  font-family: 'Roboto', 'Open-Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 3.5em;
+}
+
+.settings .userdetail{
+
+  font-family: 'Roboto', 'Open-Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 1.5em;
+}
+
+.settings .useremail{
+  font-family: 'Roboto', 'Open-Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0px;
+  font-size: 2em;
+}
+
+/* Rounded avatar */
+
+.settings #wrap {
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50% 50% 50% 50%;
+}
+
+
+
+/*=================================================
+||        4. COURSE MODAL
+==================================================*/
+
+#myModalLabel{
+  color: black;
+  font-size: 1.4em;
+}
+
+.modal-body{
+  color: black;
+  font-size: 1.4em;
+
+}
+
+/*=================================================
+||        6. ADAPTIVE CSS
+==================================================*/
+
 
 @media screen and (max-width: 556px) {
  h1 {
@@ -258,19 +274,3 @@ h2 {
   font-size:2em;
 }
 }
-
-/*=================================================
-||        6. Schedule
-==================================================*/
-
-
-.schedule h1{
-
- font-family: 'Comfortaa', cursive;
- font-size: 4em;
- letter-spacing: 10px;
- font-weight: 200;
-}
-
-
-

@@ -1,0 +1,53 @@
+<template name = "courseselector">
+
+<div class="row">
+		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+		<div class="col-lg-2 text-center v-center">
+			
+			{{>coursemodal}}
+		</div>
+		<div class="col-lg-2 text-center v-center">
+			
+			{{>coursemodal}}
+		</div>
+		<div class="col-lg-2 text-center v-center">
+			<!-- VERTICAL ACCORDION FILLED WITH COURSE SELECTION POPUPS-->
+			{{>coursemodal}}
+		</div>
+		<div class="col-lg-2 text-center v-center">
+			
+			{{>coursemodal}}
+		</div>
+		<div class="col-lg-2 text-center v-center">
+			
+			{{>coursemodal}}
+		</div>
+		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+	</div> <!-- /row -->
+
+	<div class = "row">
+		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+		<div class="col-lg-5 text-center v-center">
+			{{>coursemodal}}
+
+		</div>
+		<div class="col-lg-5 text-center v-center">
+			{{>coursemodal}}
+
+		</div>
+		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+
+	</div>
+
+	<div class="row">
+		<div class="col-lg-4 text-center v-center"></div>
+		<div class="col-lg-4 text-center v-center">
+
+			{{>submitschedule}}
+
+
+		</div>
+		<div class="col-lg-4 text-center v-center"></div>
+	</div> <!-- /row -->
+
+</template>

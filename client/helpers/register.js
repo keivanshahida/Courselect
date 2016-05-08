@@ -2,7 +2,7 @@
 // 1) Fix createUser function so that it adds a user to the DB
 
 Template.register.events({
-    'submit form': function(){
+    'submit form': function(event){
         event.preventDefault();
         var email = $('[name=email]').val();
         var password = $('[name=password]').val();
@@ -17,20 +17,8 @@ Template.register.events({
             Router.go("search"); // Redirect user if registration succeeds
         }
     });
-
-        Accounts.onCreateUser((options, user) => {
-            var firstname = "John";
-            var lastname = "Smithson";
-
-            user.initials = first_name[0].toUpperCase() + last_name[0].toUpperCase();
-
-            // Don't forget to return the new user object at the end!
-            return user;
-        });
     }
 });
-
-
 
 //USE THIS LINK FOR CUSTOM DATA INFO: http://guide.meteor.com/accounts.html#custom-user-data 
 
