@@ -7,7 +7,6 @@
  		grad_year: 2016,
  		schedule: {
  			"ninth" : {
-				//SUBJECTS
 				course1: "Geometry",
 				course2: "Biology",
 				course3: "Atlantic World History",
@@ -19,7 +18,6 @@
 				finished: true
  			},
 			"tenth": {
-				//SUBJECTS
 				course1: "Algebra 2 & Trigonometry",
 				course2: "Chemistry",
 				course3: "US History",
@@ -31,7 +29,6 @@
 				finished: true
 			},
 			"eleventh":{
-				//SUBJECTS
 				course1: "Pre Calculus AB",
 				course2: "Physics",
 				course3: "Islamic World History",
@@ -43,7 +40,6 @@
 				finished: true
 			},
 			"twelfth":{
-				//SUBJECTS
 				course1: {choice1: "", choice2: "", choice3: "", department: 0},
 				course2: {choice1: "", choice2: "", choice3: "", department: 0},
 				course3: {choice1: "", choice2: "", choice3: "", department: 0},
@@ -54,20 +50,15 @@
 				currentYear: true,
 				finished: false
 			}	
-		}
+		},
+		saved: ["0016", "0106"]
 	};
-
- 	// var mySchool = "Los Angeles High School";
- 	// user.school = mySchool;
 
  	// var myFirstname = "John";
  	// user.firstname = myFirstname;
 
  	// var myLastname = "Smith";
  	// user.lastname = myLastname;
-
- 	// var myGradyear = 2016; 
- 	// user.gradyear = myGradyear;
 
  	// user.initials = myFirstname[0].toUpperCase() + myLastname[0].toUpperCase();
  	// console.log("Hello", user);

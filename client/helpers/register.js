@@ -1,5 +1,5 @@
 // TO DO:
-// 1) Fix createUser function so that it adds a user to the DB
+// 1) Display eror for user
 
 Template.register.events({
     'submit form': function(event){
