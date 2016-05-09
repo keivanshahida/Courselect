@@ -4,10 +4,12 @@
 
 	<div class="row">
 
+		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+
 		<div class="col-lg-4 text-center v-center">
 			<br><br>
 			<div id="wrap">
-				<img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/_everaldo/128.jpg" />
+				<img class="avatar" src="https://trello-attachments.s3.amazonaws.com/572febdd622b52a6d7481b7b/130x130/b3375a7ff88e6fce983ac97714e56a4b/SmileyAvatar.png" />
 			</div>
 			<!-- Profile Pic, Name, School, Graduation Year -->
 			{{#with currentUser}}
@@ -17,21 +19,16 @@
 					<h3 class = "userdetail">Class of {{grad_year}}</h3>
 				{{/with}}
 			{{/with}}
-
-			
-
 		</div> <!-- /col -->
 
-		<div class="col-lg-2 text-center v-center"></div> <!-- /col -->
+		<div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
 
 		<div class ="col-lg-4 text-center v-center">
-			<br><br><br><br><br><br>
+			<br><br>
 			<!-- Email Address, Change Password -->
 			{{#with currentUser}}
-			{{#with emails}}
 			<!-- FIX EMAIL ISSUE -->
-			<h3 class = "useremail">Email: skim@icloud.com</h3>
-			{{/with}}
+			<h3 class = "useremail">Change Password</h3>
 			{{/with}}
 			<br>
 			<form class="form form--login">
@@ -43,6 +40,11 @@
 				<div class="form__field">
 					<label id ="lock_adjust" class="fontawesome-lock" for="login__password"><span class="hidden">New Password</span></label>
 					<input id="login__password" type="password" name = "password" class="form__input" placeholder="New Password" required>
+				</div>
+
+				<div class="form__field">
+					<label id ="lock_adjust" class="fontawesome-lock" for="login__password"><span class="hidden">Confirm New Password</span></label>
+					<input id="login__password" type="password" name = "password" class="form__input" placeholder="Confirm New Password" required>
 				</div>
 
 				<div class="form__field">

@@ -1,11 +1,47 @@
  Accounts.onCreateUser((options, user) => {
 
  	user.profile = {
-                firstname: "Shawn", 
-                lastname: "Kim", 
-                school: "Horace Mann School", 
-                grad_year: 2016
-            };
+ 		firstname: "Shawn", 
+ 		lastname: "Kim", 
+ 		school: "Horace Mann School", 
+ 		grad_year: 2016,
+ 		schedule: {
+ 			"ninth" : {
+				//SUBJECTS
+				mathematics: "Geometry",
+				science: "Biology",
+				history: "Atlantic World History",
+				english: "English 9",
+				language: "Spanish 2 Honors",
+				halfCredA: "History of Jazz",
+				halfCredB: "Wind Ensemble"
+ 			},
+			"tenth": {
+				//SUBJECTS
+				mathematics: "Algebra 2 & Trigonometry",
+				science: "Chemistry",
+				history: "US History",
+				english: "English 10",
+				language: "Spanish 3 Honors",
+				halfCredA: "Computer Science 2",
+				halfCredB: "Wind Ensemble"
+			},
+			"eleventh":{
+				//SUBJECTS
+				mathematics: "Pre Calculus AB",
+				science: "Physics",
+				history: "Islamic World History",
+				english: "English 11",
+				language: "Spanish 4 Honors",
+				halfCredA: "Music Technology",
+				halfCredB: "Empty Course"
+			},
+			"twelfth":{
+				//SUBJECTS
+
+			}	
+		}
+	};
 
  	// var mySchool = "Los Angeles High School";
  	// user.school = mySchool;
