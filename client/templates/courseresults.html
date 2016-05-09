@@ -14,6 +14,7 @@
 		<div class="col-lg-2 text-center v-center">
 
 			<!-- SEARCH BAR IN HERE -->
+			<p>SEARCH BAR HERE</p>
 
 		</div> <!-- /col -->
 
@@ -32,7 +33,23 @@
 				<hr>
 			</div>
 			{{else}}
-				<h1 class="resultName">No courses found.</h1>
+			<div class="head">
+				<div class="face face__sad">
+					<div class="eye-left"></div>
+					<div class="eye-right"></div>
+					<div class="mouth"></div>
+				</div>
+			</div>
+			<h1 class="notfound">No courses found...</h1>
+			<br>
+			<div class="col-lg-4 text-center v-center"></div>
+			<div class="col-lg-4">
+				<form class="form form--login" action = "/search">
+					<div class="form__field">
+						<input class = "bigfont" type="submit" value="Try again">
+					</div>
+				</form>
+			</div>
 			{{/each}}
 
 		</div> <!-- /col -->
