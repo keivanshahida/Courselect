@@ -8,37 +8,51 @@
  		schedule: {
  			"ninth" : {
 				//SUBJECTS
-				mathematics: "Geometry",
-				science: "Biology",
-				history: "Atlantic World History",
-				english: "English 9",
-				language: "Spanish 2 Honors",
-				halfCredA: "History of Jazz",
-				halfCredB: "Wind Ensemble"
+				course1: "Geometry",
+				course2: "Biology",
+				course3: "Atlantic World History",
+				course4: "English 9",
+				course5: "Spanish 2 Honors",
+				halfCred1: "History of Jazz",
+				halfCred2: "Wind Ensemble",
+				currentYear: false,
+				finished: true
  			},
 			"tenth": {
 				//SUBJECTS
-				mathematics: "Algebra 2 & Trigonometry",
-				science: "Chemistry",
-				history: "US History",
-				english: "English 10",
-				language: "Spanish 3 Honors",
-				halfCredA: "Computer Science 2",
-				halfCredB: "Wind Ensemble"
+				course1: "Algebra 2 & Trigonometry",
+				course2: "Chemistry",
+				course3: "US History",
+				course4: "English 10",
+				course5: "Spanish 3 Honors",
+				halfCred1: "Computer Science 2",
+				halfCred2: "Wind Ensemble",
+				currentYear: false,
+				finished: true
 			},
 			"eleventh":{
 				//SUBJECTS
-				mathematics: "Pre Calculus AB",
-				science: "Physics",
-				history: "Islamic World History",
-				english: "English 11",
-				language: "Spanish 4 Honors",
-				halfCredA: "Music Technology",
-				halfCredB: "Empty Course"
+				course1: "Pre Calculus AB",
+				course2: "Physics",
+				course3: "Islamic World History",
+				course4: "English 11",
+				course5: "Spanish 4 Honors",
+				halfCred1: "Music Technology",
+				halfCred2: "Empty Course",
+				currentYear: false,
+				finished: true
 			},
 			"twelfth":{
 				//SUBJECTS
-
+				course1: {choice1: "", choice2: "", choice3: "", department: 0},
+				course2: {choice1: "", choice2: "", choice3: "", department: 0},
+				course3: {choice1: "", choice2: "", choice3: "", department: 0},
+				course4: {choice1: "", choice2: "", choice3: "", department: 0},
+				course5: {choice1: "", choice2: "", choice3: "", department: 0},
+				halfCred1: {choice1: "", choice2: "", choice3: ""},
+				halfCred2: {choice1: "", choice2: "", choice3: ""},
+				currentYear: true,
+				finished: false
 			}	
 		}
 	};
