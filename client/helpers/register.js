@@ -1,5 +1,5 @@
 // TO DO:
-// 1) Display eror for user
+// 1) Display error for user
 
 Template.register.events({
     'submit form': function(event){
@@ -25,38 +25,3 @@ Template.register.events({
 // TO ADD USER MANUALLY IN CONSOLE:
 // Accounts.createUser({email: "skim@icloud.com", password: "1234", profile: {firstname: "Shawn", lastname: "Kim", school: "Horace Mann School", grad_year: 2016}});
 // Accounts.createUser({email: "ks@icloud.com", password: "1234"});
-
-// Student: (
-// "id": "integer",
-// "schedule": {
-
-// "ninth" : [
-// //COURSE ID'S
-// ],
-
-// "tenth": [
-// //COURSE ID'S
-// ],
-
-// "eleventh":[
-// //COURSE ID'S
-// ],
-
-// "twelfth":[
-// //COURSE ID'S
-// ]
-// },
-
-// "saved":[
-// //COURSE ID'S
-
-// ],
-// "firstname" : "string",
-// "lastname" : "string",
-// "school" : "string",
-// "grad_year": "integer",
-// "current_year": "integer",
-// "email" : "string",
-// "password" : "string"
-
-// }

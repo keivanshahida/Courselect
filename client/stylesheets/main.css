@@ -420,6 +420,39 @@ option{
 }
 
 /*=================================================
+||        4. SAVED BUTTON
+==================================================*/
+
+.saved {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  box-shadow: none;
+}
+.saved .icon {
+  transition: color 200ms ease;
+  position: relative;
+}
+.saved:hover .icon {
+  color: #F94040;
+}
+.saved:active .icon {
+  color: #F94040;
+}
+
+.icon {
+  float: left;
+  text-align: center;
+  width: 24px;
+  line-height: 24px;
+  margin-right: 12px;
+  color: #9b9b9b;
+}
+
+
+
+/*=================================================
 ||        6. ADAPTIVE CSS
 ==================================================*/
 
