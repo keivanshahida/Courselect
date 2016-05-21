@@ -1,68 +1,284 @@
 <template name="courseaccordion">
 
-   <!-- 9TH GRADE -->
-  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingOne">
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
-            9th Grade
-          </a>
-        </h4>
-      </div>
-      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-        <div class="panel-body">
-          PREVIOUS COURSES HERE
-        </div>
-      </div>
+ <!-- 9TH GRADE -->
+ <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+          9th Grade
+        </a>
+      </h4>
     </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        {{#with currentUser}}
+        {{#with profile}}
 
-   <!-- 10TH GRADE -->
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingTwo">
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            10th Grade
-          </a>
-        </h4>
-      </div>
-      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-        <div class="panel-body">
-          PREVIOUS COURSES HERE
+        <!-- FULL CREDIT COURSES -->
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.ninth.course1}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
         </div>
-      </div>
-    </div>
 
-   <!-- 11TH GRADE -->
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingThree">
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            11th Grade
-          </a>
-        </h4>
-      </div>
-      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-        <div class="panel-body">
-          PREVIOUS COURSES HERE
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.ninth.course2}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
         </div>
-      </div>
-    </div>
 
-    <!-- 12TH GRADE -->
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.ninth.course3}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.ninth.course4}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.ninth.course5}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <!-- HALF CREDIT COURSES -->
+        <div class = "row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-5 text-center v-center">
+           <div class="card">
+             <p class = "prevCourse"> {{schedule.ninth.halfCred1}}</p>
+           </div>
+         </div>
+         <div class="col-lg-5 text-center v-center">
+          <div class="card">
+           <p class = "prevCourse"> {{schedule.ninth.halfCred2}}</p>
+         </div>
+       </div>
+       <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+     </div>
+
+     {{/with}}
+     {{/with}}
+   </div>
+ </div>
+</div>
+
+<!-- 10TH GRADE -->
 <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingFour">
-        <h4 class="panel-title">
-          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-            12th Grade
-          </a>
-        </h4>
-      </div>
-      <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
-        <div class="panel-body">
-          {{> courseselector}} 
+  <div class="panel-heading" role="tab" id="headingTwo">
+    <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        10th Grade
+      </a>
+    </h4>
+  </div>
+  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+    <div class="panel-body">
+       {{#with currentUser}}
+        {{#with profile}}
+
+        <!-- FULL CREDIT COURSES -->
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.tenth.course1}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
         </div>
-      </div>
+
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.tenth.course2}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.tenth.course3}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.tenth.course4}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.tenth.course5}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <!-- HALF CREDIT COURSES -->
+        <div class = "row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-5 text-center v-center">
+           <div class="card">
+             <p class = "prevCourse"> {{schedule.tenth.halfCred1}}</p>
+           </div>
+         </div>
+         <div class="col-lg-5 text-center v-center">
+          <div class="card">
+           <p class = "prevCourse"> {{schedule.tenth.halfCred2}}</p>
+         </div>
+       </div>
+       <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+     </div>
+
+     {{/with}}
+     {{/with}}
     </div>
   </div>
+</div>
+
+<!-- 11TH GRADE -->
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingThree">
+    <h4 class="panel-title">
+      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        11th Grade
+      </a>
+    </h4>
+  </div>
+  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+    <div class="panel-body">
+     {{#with currentUser}}
+        {{#with profile}}
+
+        <!-- FULL CREDIT COURSES -->
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.eleventh.course1}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.eleventh.course2}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.eleventh.course3}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.eleventh.course4}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-10 text-center v-center">
+            <div class="card">
+              <p class = "prevCourse"> {{schedule.eleventh.course5}}</p>
+            </div>
+          </div>
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+        </div>
+
+        <!-- HALF CREDIT COURSES -->
+        <div class = "row">
+          <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+          <div class="col-lg-5 text-center v-center">
+           <div class="card">
+             <p class = "prevCourse"> {{schedule.eleventh.halfCred1}}</p>
+           </div>
+         </div>
+         <div class="col-lg-5 text-center v-center">
+          <div class="card">
+           <p class = "prevCourse"> {{schedule.eleventh.halfCred2}}</p>
+         </div>
+       </div>
+       <div class="col-lg-1 text-center v-center"></div> <!-- BUFFER -->
+     </div>
+
+     {{/with}}
+     {{/with}}
+    </div>
+  </div>
+</div>
+
+<!-- 12TH GRADE -->
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingFour">
+    <h4 class="panel-title">
+      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+        12th Grade
+      </a>
+    </h4>
+  </div>
+  <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFour">
+    <div class="panel-body">
+      {{> courseselector}} 
+    </div>
+  </div>
+</div>
+</div>
 </template>

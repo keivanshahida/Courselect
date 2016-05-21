@@ -8,7 +8,7 @@
  		schedule: {
  			"ninth" : {
 				course1: "Geometry",
-				course2: "Biology",
+				course2: "Bio3logy",
 				course3: "Atlantic World History",
 				course4: "English 9",
 				course5: "Spanish 2 Honors",
