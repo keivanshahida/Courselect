@@ -1,7 +1,7 @@
 <template name="coursemodal">
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  English
+  MATHEMATICS
 </button>
 
 <!-- Modal -->
@@ -10,10 +10,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">ENGLISH</h4>
+        <h4 class="modal-title" id="myModalLabel">MATHEMATICS</h4>
       </div>
       <div class="modal-body">
-        YOUR RANKED CHOICES HERE
+
+        {{#with currentUser}}
+        {{#with profile}}
+            <p>Choice 1: {{schedule.twelfth.course1.choice1}}</p>
+        {{/with}}
+      {{/with}}
+       
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
