@@ -1,7 +1,7 @@
 <template name="coursemodal">
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  MATHEMATICS
+  {{departmentName course.department}}
 </button>
 
 <!-- Modal -->
@@ -10,13 +10,30 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">MATHEMATICS</h4>
+        <h4 class="modal-title" id="myModalLabel">  {{departmentName course.department}}</h4>
       </div>
       <div class="modal-body">
 
+        <p>Department</p>
+                <!-- Split button -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Action</button>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">English</a></li>
+                  </ul>
+                </div>
+
         {{#with currentUser}}
         {{#with profile}}
-            <p>Choice 1: {{schedule.twelfth.course1.choice1}}</p>
+            <p>Choice 1: {{courseName schedule.twelfth.course1.choice1}}</p>
+            <p>Choice 2: {{courseName schedule.twelfth.course1.choice2}}</p>
+            <p>Choice 3: {{courseName schedule.twelfth.course1.choice3}}</p>
         {{/with}}
       {{/with}}
        

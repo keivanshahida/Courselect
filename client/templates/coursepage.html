@@ -1,96 +1,127 @@
  <!-- TO DO -->
-<!-- 1) Change color scheme (i.e. bg to White) -->
-<!-- 2) Change coursepage name and references -->
+ <!-- 1) Change color scheme (i.e. bg to White) -->
+ <!-- 2) Change coursepage name and references -->
 
-<template name="coursepage">
-	<div class = "container-full">
+ <template name="coursepage">
+ 	<div class = "container-full">
 
-		<div class="row">
-			<div class="col-lg-1 text-center v-center"></div>
-			<div class="col-lg-8 text-center v-center">
-				<!-- COURSE TITLE AND CODE -->
-				<div class = "result">
-					<a href="javascript:history.back()">Back to results</a>
-					<h1 class="resultName">{{name}}</h1>
-					<p class = "resultCode">{{number}}</p>
-				</div>
-			</div>
-			<div class="col-lg-1 text-center v-center">
-				<!-- COURSE TAGS -->
-				<div class = "result">
-					<br>
-					<h1 class = "resultTag">AP H M</h1>
-				</div>
-			</div>
-			<div class="col-lg-1 text-center v-center">
-				<br><br>	
-					<button class = "saved">
-						<div class="icon">
-							<i class="glyphicon glyphicon-heart"></i>
-						</div>
-					</button>
+ 		<div class="row">
+ 			<div class="col-lg-1 text-center v-center"></div>
+ 			<div class="col-lg-8 text-center v-center">
+ 				<!-- COURSE TITLE AND CODE -->
+ 				<div class = "result">
+ 					<a href="javascript:history.back()">Back to results</a>
+ 					<h1 class="resultName">{{name}}</h1>
+ 					<p class = "resultCode">{{number}}</p>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-1 text-center v-center">
+ 				<!-- COURSE TAGS -->
+ 				<div class = "result">
+ 					<br>
+ 					<h1 class = "resultTag">AP H M</h1>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-1 text-center v-center">
+ 				<br><br>	
+ 				<button class = "saved">
+ 					<div class="icon">
+ 						<i class="glyphicon glyphicon-heart"></i>
+ 					</div>
+ 				</button>
 
-				
-			</div>
 
-			<div class="col-lg-1 text-center v-center"></div>
-		</div> <!-- /row -->
+ 			</div>
 
-		<div class = "row">
+ 			<div class="col-lg-1 text-center v-center"></div>
+ 		</div> <!-- /row -->
 
-			<div class="col-lg-1 text-center v-center"></div>
+ 		<div class = "row">
 
-			<div class = "col-lg-10 text-center v-center">
-				<div class = "result">
-					<!-- COURSE INFO -->
-					<p>{{longinfo}}</p>
-				</div>
-			</div>
-			<div class="col-lg-1 text-center v-center"></div>
-		</div><!-- /row -->
+ 			<div class="col-lg-1 text-center v-center"></div>
 
-		<div class = "row">
-			<div class="col-lg-1 text-center v-center"></div>
-			<div class="col-lg-11 text-center v-center">
-				<!-- PREREQUISITES -->
-				<div class = "result" id = "preqRow">
-					<h1 class="resultName">Prerequisites:</h1>
-					<p class = "preq">Receive a B+ or higher.</p>
-				</div>
-			</div>
-		</div><!-- /row -->
+ 			<div class = "col-lg-10 text-center v-center">
+ 				<div class = "result">
+ 					<!-- COURSE INFO -->
+ 					<p>{{longinfo}}</p>
+ 				</div>
+ 			</div>
+ 			<div class="col-lg-1 text-center v-center"></div>
+ 		</div><!-- /row -->
 
-		<div class = "row">
-			<div class="col-lg-4 text-center v-center"></div> <!-- BUFFER -->
-			<div class="col-lg-4 text-center v-center">
-				<!-- ADD COURSE -->
-				<form class="form form--login">
-					<div class="form__field">
-						<input class = "bigfont" type="submit" value="Add Course" data-toggle="modal" data-target="#myPageModal">
-					</div>
-				</form>
+ 		<div class = "row">
+ 			<div class="col-lg-1 text-center v-center"></div>
+ 			<div class="col-lg-11 text-center v-center">
+ 				<!-- PREREQUISITES -->
+ 				<div class = "result" id = "preqRow">
+ 					<h1 class="resultName">Prerequisites:</h1>
+ 					<p class = "preq">Receive a B+ or higher.</p>
+ 				</div>
+ 			</div>
+ 		</div><!-- /row -->
 
-				<!-- Modal -->
-				<div class="modal fade" id="myPageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h4 class="modal-title" id="myModalLabel">ADD COURSE</h4>
-							</div>
-							<div class="modal-body">
-								CHOOSE BLOCK AND RANK
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary" id = "saveChanges">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
+ 		<div class = "row">
+ 			<div class="col-lg-4 text-center v-center"></div> <!-- BUFFER -->
+ 			<div class="col-lg-4 text-center v-center">
+ 				<!-- ADD COURSE -->
+ 				<form class="form form--login">
+ 					<div class="form__field">
+ 						<input class = "bigfont" type="submit" value="Add Course" data-toggle="modal" data-target="#myPageModal">
+ 					</div>
+ 				</form>
 
-			</div>
-			<div class="col-lg-4 text-center v-center"></div> <!-- BUFFER -->
-		</div><!-- /row -->
-	</div> <!--/ container-full -->
-</template>
+ 				<!-- Modal -->
+ 				<div class="modal fade" id="myPageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ 					<div class="modal-dialog" role="document">
+ 						<div class="modal-content">
+ 							<div class="modal-header">
+ 								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+ 								<h4 class="modal-title" id="myModalLabel">ADD COURSE</h4>
+ 							</div>
+ 							<div class="modal-body">
+ 								<p>Block</p>
+ 								<!-- Split button -->
+ 								<div class="btn-group">
+ 									<button type="button" class="btn btn-default">Action</button>
+ 									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ 										<span class="caret"></span>
+ 										<span class="sr-only">Toggle Dropdown</span>
+ 									</button>
+ 									<ul class="dropdown-menu">
+ 										<li><a href="#">Action</a></li>
+ 										<li><a href="#">Another action</a></li>
+ 										<li><a href="#">Something else here</a></li>
+ 										<li role="separator" class="divider"></li>
+ 										<li><a href="#">Separated link</a></li>
+ 									</ul>
+ 								</div>
+ 								<p>Ranking</p>
+ 								<!-- Split button -->
+ 								<div class="btn-group">
+ 									<button type="button" class="btn btn-default">Action</button>
+ 									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ 										<span class="caret"></span>
+ 										<span class="sr-only">Toggle Dropdown</span>
+ 									</button>
+ 									<ul class="dropdown-menu">
+ 										<li><a href="#">Action</a></li>
+ 										<li><a href="#">Another action</a></li>
+ 										<li><a href="#">Something else here</a></li>
+ 										<li role="separator" class="divider"></li>
+ 										<li><a href="#">Separated link</a></li>
+ 									</ul>
+ 								</div>
+ 							</div>
+ 							<div class="modal-footer">
+ 								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+ 								<button type="button" class="btn btn-primary" id = "saveChanges">Save changes</button>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+
+ 			</div>
+ 			<div class="col-lg-4 text-center v-center"></div> <!-- BUFFER -->
+ 		</div><!-- /row -->
+ 	</div> <!--/ container-full -->
+ </template>

@@ -8,7 +8,7 @@
  		schedule: {
  			"ninth" : {
 				course1: "Geometry",
-				course2: "Bio3logy",
+				course2: "Biology",
 				course3: "Atlantic World History",
 				course4: "English 9",
 				course5: "Spanish 2 Honors",
@@ -40,13 +40,13 @@
 				finished: true
 			},
 			"twelfth":{
-				course1: {choice1: "", choice2: "", choice3: "", department: 0},
-				course2: {choice1: "", choice2: "", choice3: "", department: 0},
-				course3: {choice1: "", choice2: "", choice3: "", department: 0},
-				course4: {choice1: "", choice2: "", choice3: "", department: 0},
-				course5: {choice1: "", choice2: "", choice3: "", department: 0},
-				halfCred1: {choice1: "", choice2: "", choice3: ""},
-				halfCred2: {choice1: "", choice2: "", choice3: ""},
+				course1: {choice1: Courses.findOne({number: "0012"})._id, choice2: Courses.findOne({number: "0012"})._id, choice3: Courses.findOne({number: "0012"})._id, department: 0},
+				course2: {choice1: Courses.findOne({number: "0012"})._id, choice2: Courses.findOne({number: "0012"})._id, choice3: Courses.findOne({number: "0012"})._id, department: 0},
+				course3: {choice1: Courses.findOne({number: "0012"})._id, choice2: Courses.findOne({number: "0012"})._id, choice3: Courses.findOne({number: "0012"})._id, department: 0},
+				course4: {choice1: Courses.findOne({number: "0012"})._id, choice2: Courses.findOne({number: "0012"})._id, choice3: Courses.findOne({number: "0012"})._id, department: 0},
+				course5: {choice1: Courses.findOne({number: "0012"})._id, choice2: Courses.findOne({number: "0012"})._id, choice3: Courses.findOne({number: "0012"})._id, department: 0},
+				halfCred1: {choice1: Courses.findOne({number: "0012"})._id, choice2: Courses.findOne({number: "0012"})._id, choice3: Courses.findOne({number: "0012"})._id},
+				halfCred2: {choice1: Courses.findOne({number: "0012"})._id, choice2: Courses.findOne({number: "0012"})._id, choice3: Courses.findOne({number: "0012"})._id},
 				currentYear: true,
 				finished: false
 			}	

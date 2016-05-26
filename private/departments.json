@@ -1,0 +1,14 @@
+[
+  { "number": 0, "name": "English" },
+  { "number": 1, "name": "History" },
+  { "number": 2, "name": "Foreign Language" },
+  { "number": 3, "name": "Mathematics" },
+  { "number": 4, "name": "Science" },
+  { "number": 5, "name": "Computing & Communications" },
+  { "number": 6, "name": "Arts" },
+  { "number": 7, "name": "Independent Study" },
+  { "number": 8, "name": "Counseling & Guidance" },
+  { "number": 9, "name": "Physical Education & Health" }
+]
+
+
